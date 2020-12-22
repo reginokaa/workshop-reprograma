@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;  /* configura a página para ocupar todo o espaço da tela do navegador*/
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner{
+    background-image: url(../img/eu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-apresentacao{
+    text-align: center;
+}
+
+.banner-titulo{
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.banner-subtitulo{
+    margin-bottom: 35px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.banner-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    background-color: #C0C0C0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    height: 40px;    
+    border: 1px solid;
+}
+
+.banner-link:hover{
+    opacity: 0.8;
+}
+
+
+/* .sobre{
+    padding: 50px;
+} */
+
+.titulo-sobre{
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: grey
+}
+
+
+.sobre-caixa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.sobre-resumo{
+    width: 30%;
+    text-align: justify;
+}
+
+.sobre-texto{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.sobre-eu{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.sobre-habilidades{
+    width: 30%;
+}
+
+.lista-habilidades{
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.redes{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes-link{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px 45px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.redes-link:hover{
+    opacity: 0.8;
+}
+
+.redes-titulo{
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+}
+
+@media(max-width: 800px){  /* pra tornar o design da página responsivo  */
+
+    .sobre-caixa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-resumo{
+        width: 70%;
+    }
+
+    .sobre-habilidades{
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+
+    .titulo-habilidades{
+        margin-top: 30px;
+    }
+
+    .lista-habilidades{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:720px){
+    .redes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes-link{
+        width: 50%;
+        /* margin-top: 10px; */
+    }
+}
